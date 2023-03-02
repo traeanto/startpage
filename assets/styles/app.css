@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: #4c4f69;
+    background-color: #eff1f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 120vh;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+    padding: 20px;
+}
+
+.timeBox {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hour,
+#separator,
+#minutes {
+    font-size: 12vh;
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+#hour {
+    font-weight: bold;
+    color: #ee99a0;
+}
+
+#greetings {
+    font-size: 3vh;
+}
+
+.linkBox {
+    grid-row: 2;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+}
+
+.category {
+    background-color: #dce0e8;
+}
+
+.category b {
+    color: #4c4f69;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #8aadf4;
+}
+
+.item {
+	list-style-type: none;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+
+.item a {
+    font-family: "JetBrainsMono Nerd Font";
+    color: inherit;
+	text-decoration: none;
+}
+
+.dotpaw {
+    color: #e64553;
+}
+
+#media {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#social {
+    grid-row: 1;
+    grind-column: 2;
+}
+
+#other {
+    grid-row: 1;
+    grid-column: 3;
+}
